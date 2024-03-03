@@ -47,7 +47,8 @@ public class LoginFormTest {
     
     @Test
     public void testLoginSuccessful() {
-        String result = SeleniumOperations.bunningsLoginPage(driver, "https://www.bunnings.com.au/login", "natexuan0805@gmail.com", "Vickyzhang0911!");
+    	//assume the email and the password are correct.
+        String result = SeleniumOperations.bunningsLoginPage(driver, "https://www.bunnings.com.au/login", "123@gmail.com", "321");
         Assert.assertEquals("Login successful", result);
     }
     
